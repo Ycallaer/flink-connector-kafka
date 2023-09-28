@@ -69,7 +69,7 @@ under the License.
                                 <includes>
                                     <include>org.apache.flink:flink-connector-base</include>
                                     <include>org.apache.flink:flink-connector-kafka</include>
-                                    <include>org.apache.kafka:*</include>
+
                                 </includes>
                             </artifactSet>
                             <filters>
@@ -86,12 +86,7 @@ under the License.
                                     </excludes>
                                 </filter>
                             </filters>
-                            <relocations>
-                                <relocation>
-                                    <pattern>org.apache.kafka</pattern>
-                                    <shadedPattern>org.apache.flink.kafka.shaded.org.apache.kafka</shadedPattern>
-                                </relocation>
-                            </relocations>
+
                         </configuration>
                     </execution>
                 </executions>
